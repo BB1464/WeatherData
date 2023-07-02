@@ -15,5 +15,7 @@ r1 <- get_chirps(lonlat, dates, server = "ClimateSERV")
 
 # The get_chirts function retreive the temperature(max and min), and relative humidity data
 
-get_chirts(lonlat, dates, server = "ClimateSERV")
+Tmax <- get_chirts(lonlat, dates, server = "ClimateSERV",var = 'Tmax')
+Tmin <- get_chirts(lonlat, dates, server = "ClimateSERV",var = 'Tmin')
+RHum <- get_chirts(lonlat, dates, server = "ClimateSERV",var = 'RHum')
 
