@@ -10,7 +10,7 @@ dates <- c("2020-01-01","2022-12-31")
 
 lonlat <- data.frame(lon = c(7.01656), lat = c(4.517005))
 
-# The get_chirps function retrieve all the rainfall data
+# The get_chirps function retrieve all the rainfall data but the documentation specified that the data is available from 1983 to 2016
 r1 <- get_chirps(lonlat, dates, server = "ClimateSERV")
 
 # The get_chirts function retreive the temperature(max and min), and relative humidity data
